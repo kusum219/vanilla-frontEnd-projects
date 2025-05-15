@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+<style>
+    .header{
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+       background-position: center;
+       background-size: cover;
+       min-height: 70vh;
+    }
+     .header h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .row{
+        margin: 30px;
+       padding: 70px;
+    }
+    .row img{
+        width: 50%;
+        border-radius: 20px;
+    }
+    @media (max-width:700px){
+        .header{
+            min-height: 50vh;
+        }
+        .row{
+            padding: 20px;
+
+        }
+    
+    }
+</style>
+<script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="nav-links"  id="nav-links">
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+            <li><a href="">course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Our Courses</h1>
+    </div>
+    </section>
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quam amet minus nostrum delectus, voluptate, tempora reiciendis
+        </p>
+    <div class="row">
+    <div class="course-col">
+        <h3>Primary Level</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a, sunt dicta tempora, quasi commodi ratione quas non<br> quisquam voluptatem est, nemo qui aspernatur corrupti soluta cum totam vero iure!</p>
+    </div>
+     <div class="course-col">
+        <h3>Secondary Level</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a, sunt dicta tempora, quasi commodi ratione <br>quas non quisquam voluptatem est, nemo qui aspernatur corrupti soluta cum totam vero iure!</p>
+    </div>
+     <div class="course-col">
+        <h3>High Level</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a, sunt dicta tempora, quasi commodi ratione<br> quas non quisquam voluptatem est, nemo qui aspernatur corrupti soluta cum totam vero iure!</p>
+    </div>
+     <div class="course-col">
+        <h3>Bachleor Level</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a, sunt dicta tempora, quasi commodi ratione<br> quas non quisquam voluptatem est, nemo qui aspernatur corrupti soluta cum totam vero iure!</p>
+    </div>
+     <div class="course-col">
+        <h3>Master Level</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a, sunt dicta tempora, quasi commodi ratione<br> quas non quisquam voluptatem est, nemo qui aspernatur corrupti soluta cum totam vero iure!</p>
+    </div>
+    </div>
+</section>
+    
+    <section class="footer">
+    <h1>About </h1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, deserunt laudant<br>ium! Eligendi blanditiis quas dolorum magni molestiae voluptate suscipit iure esse maiores perspiciatis eaque, cupiditate aut consequuntur natus animi temporibus.</P>
+    <div class="icons">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-youtube"></i>
+   <i class="fa-brands fa-linkedin"></i>
+</div>
+</section>
+       <script src="java.js"></script>
+
+</body>
+</html>

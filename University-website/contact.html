@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+<style>
+    .header{
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+       background-position: center;
+       background-size: cover;
+       min-height: 60vh;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .row{
+        margin: 30px;
+
+       padding: 60px;
+    }
+
+    .row img{
+        width: 70%;
+        border-radius: 20px;
+    } 
+    .row ul li{
+        width: 100%;
+        list-style-type: none;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f44336;
+        color: white;
+        border-radius: 10px;
+    }
+    .row ul li:hover{
+        box-shadow: 2px 2px 3px 2px black;
+    }
+    .row h2{
+        padding: 10px;
+    }
+    .row p{
+        padding: 10px;
+    }
+    .btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f44336;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: transparent;
+    border: 1px solid #f44336;
+    color: black;
+}
+    @media (max-width:700px){
+        .header{
+            min-height: 70vh;
+        }
+     
+    }
+    .con-loc{
+        display: flex;
+        margin: 10px;
+        align-items: center;
+    }
+    .con-loc i{
+        padding: 10px;
+        margin: 10px;
+        color: #f44336;
+    }
+    
+    .inp-ins{
+        padding: 10px;
+        width: 100%;
+    }
+    form{
+        text-align: center;
+    }
+    form input,textarea{
+        padding: 10px;
+        font-size: 20px;
+        margin: 10px;
+        outline: none;
+        width: 100%;
+        border: none;
+        background-color: rgb(232, 232, 229);
+    }
+    
+</style>
+<script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="nav-links"  id="nav-links">
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+            <li><a href="Courses.html">course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Contact</h1>
+    </div>
+    </section>
+
+    <section class="main">
+   <div  class="row">
+    <div class="con-col">
+        <div class="con-loc">
+            <i class="fa-solid fa-house"></i>
+            <span><h3>XYZ Road,Abc Building</h3>
+           
+            <p>Balaju,Kathmandu</p>
+                </span>
+        </div>
+         <div class="con-loc">
+            <i class="fa-solid fa-phone"></i>
+            <span>
+            <h3>+1 0123456789</h3>
+            <p>Monday to Saturday 10Am to 4pm</p>
+            </span>
+        </div>
+         <div class="con-loc">
+            <i class="fa-solid fa-envelope"></i>
+            <span><h3>info@Simplepro.com</h3>
+            <p>Email us your Thoughts</p></span>
+        </div>
+    </div>
+    <div class="con-col">
+        <form>
+            <div class="inp-ins">
+            <input type="text" placeholder="Enter your name"><br>
+            <input type="email" placeholder="Enter your adress"><br>
+            <input type="text" placeholder="Enter your subject"><br>
+            <textarea rows="5" placeholder="Message"></textarea>
+                <a href="" class="btn">Submmit</a>
+        </div>
+        </form>
+    </div>
+   </div>
+    <section class="form">
+  
+
+    </section>
+
+    <section class="footer">
+    <h1>About </h1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, deserunt laudant<br>ium! Eligendi blanditiis quas dolorum magni molestiae voluptate suscipit iure esse maiores perspiciatis eaque, cupiditate aut consequuntur natus animi temporibus.</P>
+    <div class="icons">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-youtube"></i>
+   <i class="fa-brands fa-linkedin"></i>
+</div>
+</section>
+       <script src="java.js"></script>
+
+</body>
+</html>

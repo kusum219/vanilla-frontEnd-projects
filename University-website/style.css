@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ),url(images/banner.png);   
+ min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    pad: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    margin: 10px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+} 
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Saira",sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 42px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+}
+.btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+.course{
+    margin: 3%;
+    padding-top: 50px;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    font-family: "Saira",sans-serif;
+    margin: 10px;
+}
+.course h3{
+text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    font-family: "Saira",sans-serif;
+
+}
+p{
+    color: lightslategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.course-col:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+    transition:1s ease ;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+    display: block;
+}
+.header{
+    min-height: 80vh;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links{
+    position: absolute;
+    height: 30vh;
+    transition: 2s ease;
+    width: 50%;
+    top: 0;
+    right:0;
+    display: none;
+    text-align: left;
+    z-index: 2;
+    background: #e14439;
+}
+nav img{
+    width: 150px;
+}
+nav ul{
+    padding: 10px;
+}
+nav .fa-solid{
+display: block;
+color: white;
+padding: 20px;
+font-size: 25px;
+}
+/*this is for course are*/
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimonials-col img{
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .cta h1{
+        font:24px;
+    }
+}
+
+/*This if for camous pattern*/
+.campus{
+    text-align: center;
+    margin: 3%;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    transition: 1s ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background-color: rgb(226,0,0,0.7);
+}
+.layer h3{
+width: 100%;
+font-weight: 500;
+color: white;
+opacity: 0;
+transition: 0.5s;
+font-size: 28px;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+}
+.layer:hover h3{
+bottom:49%;
+opacity: 1;
+}
+/*For Facilities*/
+.facilities{
+text-align: center;
+margin: 3%;
+padding-top: 50px;}
+
+.facilities-col{
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin: 5%;
+    text-align: left;
+}
+.facilities img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 5px;
+}
+.facilities-col h3{
+    text-align: left;
+    margin: 10px;
+}
+.testimonials{
+    width: 80%;
+    margin:auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.testimonials-col{
+    display: flex;
+    justify-content: space-between;
+    border-radius:20px;
+    margin: 3%;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 5%;
+    cursor: pointer;
+
+}
+.testimonials-col img{
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+  padding: 10px;
+
+}
+.testimonials-col h3{
+    margin-left: 10px;
+}
+.testimonials-col i{
+    color: gold;
+    padding: 2px;
+}
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),hsla(0, 0%, 0%, 0.7)),url(images/banner2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding:100px 0 ;
+}
+.cta h1{
+    padding: 10px;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.icons{
+    color:white;
+    cursor: pointer;
+    padding: 18px 0%;
+   
+}
